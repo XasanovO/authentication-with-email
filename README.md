@@ -1,4 +1,4 @@
-JWT-Secured API with Email Confirmation
+#JWT-Secured API with Email Confirmation
 Overview
 This project is a REST API secured with JWT tokens, featuring user registration, login, and account activation. The API sends an email confirmation link during registration. When the link is clicked, the user's account is activated. Technologies used in this project include:
 
@@ -54,14 +54,13 @@ Running the Application
 Clone the repository:
 
 sh
-git clone https://github.com/yourusername/your-repository.git
+git clone [https://github.com/yourusername/your-repository.git](https://github.com/XasanovO/authorization-with-emai)
 cd your-repository
 Update application.properties: Replace the placeholder values with your actual PostgreSQL and email credentials.
 
 Build the project:
 
 sh
-Копировать код
 mvn clean install
 Run the application:
 
@@ -79,7 +78,7 @@ GET /api/activate?token={token}
 The token is sent to the user's email during registration.
 Login:
 
-#POST /api/login
+# POST /api/login
 Provide email and password to receive a JWT token for authenticated requests.
 Example Request
 Register User
