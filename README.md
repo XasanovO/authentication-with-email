@@ -43,8 +43,8 @@ This project is a REST API secured with JWT tokens, featuring user registration,
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/your-repository.git
-    cd your-repository
+    git clone https://github.com/XasanovO/authorization-with-email.git
+    cd authorization-with-email
     ```
 
 2. **Build the project**:
@@ -63,7 +63,12 @@ This project is a REST API secured with JWT tokens, featuring user registration,
 
 - **Register User**: 
     - **POST** `/api/register`
-    - Send user details (name, email, password, etc.) in the request body.
+    - Registers a new user with the following fields:
+        - `firstname`: User's first name
+        - `lastname`: User's last name
+        - `email`: User's email address
+        - `password`: User's password
+        - `confirmPassword`: Confirmation of the user's password
 
 - **Activate User**: 
     - **GET** `/api/activate?token={token}`
@@ -82,9 +87,11 @@ POST /api/register
 Content-Type: application/json
 
 {
-  "name": "John Doe",
+  "firstname": "John",
+  "lastname": "Doe",
   "email": "john.doe@example.com",
-  "password": "SecurePassword123"
+  "password": "SecurePassword123",
+  "confirmPassword": "SecurePassword123"
 }
 ```
 
@@ -107,3 +114,4 @@ Content-Type: application/json
 ```
 
 ---
+
